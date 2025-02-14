@@ -117,11 +117,7 @@ const shizuimg = [
         " https://files.catbox.moe/r39tdl.jpg"
         ];
 const imageUrls = [
-        "https://i.ibb.co/m944LxT/image.jpg",
-        "https://i.ibb.co/mHSbM3d/image.jpg",
-        "https://files.catbox.moe/g4ae8u.jpg",
-        "https://files.catbox.moe/9vp33w.jpg",
-        "https://files.catbox.moe/6s1c3e.jpg"
+        "https://files.catbox.moe/r39tdl.jpg"
     ];
     const randomIndex = Math.floor(Math.random() * imageUrls.length);
     const randomImageUrl = imageUrls[randomIndex];
@@ -249,9 +245,9 @@ let menu = '`Owner Menu`\n.self\n.public\n.addprem\n.delprem';
             isForwarded: true,
             mentionedJid: [sender],
             externalAdReply: {
-                title: "Powered By Lezz",
+                title: "Powered By ShiZu Pedia",
                 body: "Simple Bot Using Javascript",
-                thumbnailUrl: shizuimg,
+                thumbnailUrl: randomImageUrl,
                 mediaType: 1,
                 renderLargerThumbnail: true
             }
