@@ -18,6 +18,35 @@ const chalk = require('chalk')
 const crypto = require('crypto')
 const { exec } = require("child_process")
 const path = require('path')
+const {
+        smsg
+        getGroupAdmins
+        parseMention
+        getSizeMedia
+        bytesToSize
+        sendGmail
+        generateProfilePicture
+        logic
+        jsonformat
+        formatp
+        tanggal
+        formatDate
+        getTime
+        isUrl
+        sleep
+        reSize
+        clockString
+        runtime
+        fetchJson
+        formatSize
+        getBuffer
+        getRandom
+        processT
+        generateMessageTag
+        resize
+        unixTimestampSeconds
+        } = require('./lib/func')
+
 module.exports = async (ade, m, store) => {
 try {
 const from = m.key.remoteJid
@@ -84,6 +113,9 @@ const qtoko = {key: {fromMe: false, participant: `0@s.whatsapp.net`, ...(m.chat 
 const qlive = {key: {participant: '0@s.whatsapp.net', ...(m.chat ? {remoteJid: `status@broadcast`} : {})}, message: {liveLocationMessage: {caption: `Simple Bot By Lezz`,jpegThumbnail: ""}}}
 
 // Random Image
+const shizuimg = [
+        " https://files.catbox.moe/r39tdl.jpg"
+        ];
 const imageUrls = [
         "https://i.ibb.co/m944LxT/image.jpg",
         "https://i.ibb.co/mHSbM3d/image.jpg",
@@ -204,10 +236,10 @@ ppuser = 'https://files.catbox.moe/2lw5hm.jpg'
 
 switch (command) {
 case "menu": {
-let menu = `ISI MENU ANDA`;
+let menu = '`Owner Menu`\n.self\n.public\n.addprem\n.delprem';
     ade.sendMessage(m.chat, {
         document: fs.readFileSync("./nganuin.js"),
-        fileName: "Lezz DcodeR",
+        fileName: "© ShiZu Pedia",
         mimetype: "application/pdf",
         fileLength: 0,
         pageCount: 0,
@@ -219,7 +251,7 @@ let menu = `ISI MENU ANDA`;
             externalAdReply: {
                 title: "Powered By Lezz",
                 body: "Simple Bot Using Javascript",
-                thumbnailUrl: randomImageUrl,
+                thumbnailUrl: shizuimg,
                 mediaType: 1,
                 renderLargerThumbnail: true
             }
