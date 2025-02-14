@@ -19,31 +19,31 @@ const crypto = require('crypto')
 const { exec } = require("child_process")
 const path = require('path')
 const {
-        smsg
-        getGroupAdmins
-        parseMention
-        getSizeMedia
-        bytesToSize
-        sendGmail
-        generateProfilePicture
-        logic
-        jsonformat
-        formatp
-        tanggal
-        formatDate
-        getTime
-        isUrl
-        sleep
-        reSize
-        clockString
-        runtime
-        fetchJson
-        formatSize
-        getBuffer
-        getRandom
-        processT
-        generateMessageTag
-        resize
+        smsg,
+        getGroupAdmins,
+        parseMention,
+        getSizeMedia,
+        bytesToSize,
+        sendGmail,
+        generateProfilePicture,
+        logic,
+        jsonformat,
+        formatp,
+        tanggal,
+        formatDate,
+        getTime,
+        isUrl,
+        sleep,
+        reSize,
+        clockString,
+        runtime,
+        fetchJson,
+        formatSize,
+        getBuffer,
+        getRandom,
+        processT,
+        generateMessageTag,
+        resize,
         unixTimestampSeconds
         } = require('./lib/func')
 
